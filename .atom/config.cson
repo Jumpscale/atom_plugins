@@ -1,0 +1,45 @@
+"*":
+  core:
+    disabledPackages: [
+      "linter-pep8"
+      "linter-python-pyflakes"
+      "linter-markdown"
+      "language-gfm"
+      "markdown-format"
+      "toggle-markdown-task"
+    ]
+  editor:
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "4e7d0087-aad6-f06f-0964-6b062d580d1c"
+  "linter-flake8":
+    ignoreErrorCodes: [
+      "501"
+      "D100"
+      "F403"
+    ]
+    maxLineLength: 160
+  "python-autopep8":
+    formatOnSave: true
+    maxLineLength: 120
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  "tool-bar":
+    visible: false
+  "tool-bar-markdown-writer": {}
+  welcome:
+    showOnStartup: false
+".capnp.source":
+  editor:
+    tabLength: 4
+".md.text":
+  editor:
+    tabLength: 4
+".raml.source":
+  editor:
+    tabLength: 4

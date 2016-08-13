@@ -1,0 +1,55 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+'.source.python':
+  'ipshell':
+    'prefix': 'ipshell'
+    'body': """
+        from IPython import embed
+        print ("DEBUG NOW $1")
+        embed()
+        raise RuntimeError(\"stop debug here\")
+        """
+  'debug':
+    'prefix': 'debug'
+    'body': """
+        from pudb import set_trace; set_trace()
+        """
+  'execute':
+        'prefix':'execute'
+        'body':'rc,out=j.sal.process.execute($1, die=True, outputToStdout=False, ignoreErrorOutput=False)'
+  'createdir':
+        'prefix':'createdir'
+        'body':'j.sal.fs.createDir($1)'
+  'exists':
+        'prefix':'exists'
+        'body':'j.sal.fs.exists($1, followlinks=True)'
+  'readfile':
+        'prefix':'readfile'
+        'body':'c=j.sal.fs.fileGetContents($1)'
+  'writefile':
+        'prefix':'writefile'
+        'body':'j.sal.fs.writeFile(filename=$1, contents=$2, append=False)'
+  'errorinput':
+        'prefix':'errorinput'
+        'body':'raise j.exceptions.Input(message=$1, level=1, source="", tags="", msgpub="")'
+  'joinpaths':
+        'prefix':'joinpaths'
+        'body':'j.sal.fs.joinPaths($1,$2)'
+
+#
+
+
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
