@@ -18,7 +18,7 @@ In [4]: cp /tmp/tempd/out.json /opt/salout.json
 (https://gist.githubusercontent.com/xmonader/f947f8a48bf208e9a7fe8db547104d02/raw/1b5a59f1d269b4b411adc8da49f78d137e6cf87f/gistfile1.txt)
 
 ```
-~ > python3 genjs8stub2.py /opt/myjs8xenialopt/salout.json 
+~ > python3 genjs8stub2.py /opt/salout.json 
 Main:  docker
 Main:  disklayout
 Main:  nettools
