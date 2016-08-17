@@ -15,18 +15,10 @@ SUMMARY.md  compl.py  errors.md  jumpscale.api  out.pickled  j/
 In [4]: cp /tmp/tempd/out.json /opt/out.pickled
 ```
 
-# stubbing json api file 
-You can generate a stub for jumpscale using this tool genjs8stub.py
-https://raw.githubusercontent.com/xmonader/genjs8stub/master/genjs8stub.py
+# stubbing pickled api file 
 
-```
-~ > python3 genjs8stub2.py /opt/out.pickled 
+You should use : 
+```j.tools.js8stub.generateStub(dest='/tmp/jscompl.py', pickledfile="/opt/out.pickled")```
 
-```
-# using it from atom
-	- go to the settings of autocomplete-python
-	- add the path of the completion package for instance ~/compl to `Extra Paths for Packages`
-or copy it to your dist-packages of the interpreter.
-
-# using it from any other editor
-You can use it from sublime/vscode or any other editor because it creates a valid python fake module.  
+# using it
+copy the resulting python file to your dist-packages `should be under the name jscompl.py` and you will get a working code completion for your editor.
